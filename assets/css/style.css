@@ -9,13 +9,14 @@
     --text-color-2: aqua;
     --text-color-3: magenta;
     --text-color-4: lime;
-  }
+    --text-color-5-transparent: rgba(255, 255, 255, 0.7); /* For active start button */
+}
 
 /* Custom Font */
 @font-face {
     font-family: "Graffiti";
     src: url("../fonts/AttackGraffiti/AttackGraffiti-3zRBM.ttf");
-  }
+}
 
 /* Global  */
 html {
@@ -25,4 +26,130 @@ html {
     color: var(--text-color-1);
     font: 1rem 'Roboto', sans-serif;
     user-select: none;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    margin: 2vh 0 8vh 2vw;
+    height: auto;
+    width: 70%;
+    margin-top: 10vh;
+}
+
+header h1 {
+    transform: rotate(-10deg);
+    font: 6vmax 'Graffiti', sans-serif;
+    letter-spacing: 15px;
+    word-wrap: none;
+    color: var(--text-color-2);
+    transition: color 0.5s ease-in-out;
+}
+
+/* Main Content */
+main {
+    margin-left: 5%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Classes */
+.answerBtn {
+    width: 100%;
+    height: 100%;
+    font: 3vmax sans-serif;
+    cursor: pointer;
+    background-color: var(--primary-color-dark-transparent);
+    text-align: left;
+    padding-left: 1vw;
+    color: var(--text-color-1);
+    border-color: var(--secondary-color) ;
   }
+  
+  .answerBtn:hover {
+    background-color: var(--primary-color-light);
+  }
+  
+  .answerBtn:active {
+    background-color: var(--primary-color-dark);
+  }
+
+
+/* ID's */
+#gameZone {
+    margin-top: 2vh;
+    min-width: 65vw;
+    max-width: 65vw;
+    height: 60vh;
+    border: var(--primary-color-dark) inset 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color-dark-transparent);
+}
+
+#gameZone section {
+    border: var(--primary-color-dark) inset 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#questionZone {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 3vmax;
+}
+
+#answerZone {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#countDown {
+    width: auto;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#countDownText {
+    margin-left: 30px;
+    font: 3.5vmax 'Graffiti', sans-serif;
+    letter-spacing: 15px;
+    color: var(--text-color-3);
+}
+
+#scoreZone {
+    font: 2.5vmax 'Graffiti', sans-serif;
+    letter-spacing: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+#scoreZone div {
+    margin-bottom: 1vh;
+}
+
+#startButton {
+    font: 3vmax 'Graffiti', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    color: var(--text-color-4);
+    margin-top: 1vh;
+}
+
+#startButton:hover {
+    color: var(--text-color-2);
+}
+
+#startButton:active {
+    color: var(--text-color-5-transparent);
+}

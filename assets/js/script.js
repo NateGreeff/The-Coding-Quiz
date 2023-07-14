@@ -60,5 +60,3 @@ const quizQuestions = [
       answer: "Math.max(x, y)"
     },
   ];
-
-  console.log(quizQuestions);
