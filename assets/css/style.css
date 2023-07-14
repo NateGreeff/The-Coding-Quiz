@@ -1,10 +1,14 @@
 /* Variables */
 :root {
-    --primary-color: ;
-    --primary-color-light: ;
-    --primary-color-dark: ;
-    --primary-color-dark-transparent: ;
-    --primary-color-text: ;
+    --primary-color: #444;
+    --primary-color-light: #555;
+    --primary-color-dark: #222;
+    --primary-color-dark-transparent: rgba(0, 0, 0, 0.5);
+    --secondary-color: #7f59d3;
+    --text-color-1: white;
+    --text-color-2: aqua;
+    --text-color-3: magenta;
+    --text-color-4: lime;
   }
 
 /* Custom Font */
@@ -15,10 +19,10 @@
 
 /* Global  */
 html {
-    background: url("../img/background.png"), linear-gradient(350deg,#222,#444);
+    background: url("../img/background.png"), linear-gradient(350deg, var(--primary-color),var(--primary-color-dark));
     background-attachment: fixed;
     background-size: cover;
-    color: var(--primary-color-text);
+    color: var(--text-color-1);
     font: 1rem 'Roboto', sans-serif;
     user-select: none;
   }
