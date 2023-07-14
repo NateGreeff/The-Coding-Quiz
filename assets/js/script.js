@@ -1,3 +1,6 @@
+// Global Constants & Variables ---------------------------
+
+// Quiz Questions
 const quizQuestions = [
     {
       question: "Which is the correct way to write a comment in JavaScript?",
@@ -59,4 +62,30 @@ const quizQuestions = [
       choices: ["Math.max(x, y)", "Math.ceil(x, y)", "ceil(x, y)", "top(x, y)"],
       answer: "Math.max(x, y)"
     },
-  ];
+];
+
+// Element Connections
+const startButton = document.getElementById("startButton");
+const questionZone = document.getElementById("questionZone");
+const answerZone = document.getElementById("aswerZone");
+const answerButtons = document.getElementsByClassName("answerBtn");
+
+const gameTime = 3; //Total Game Time
+
+var questionIndex = 0;
+var timeleft = gameTime;
+
+startButton.addEventListener("click", function() {
+    startButton.style.display = 'none'; //Hide the start button
+    gameTimer = setInterval(function() {
+        document.getElementById("countDownText").innerHTML = timeleft + "</br></br> seconds left";
+        timeleft -= 1;
+        if (timeleft < 0) {
+            clearInterval(gameTimer);
+            document.getElementById("countDownText").textContent = "~Finished!~";
+            startButton.textContent = "Try Again?"; 
+            startButton.style.display = 'inline'; //Re-display start button
+            timeleft = gameTime;
+        }
+    }, 1000);
+});
