@@ -1,0 +1,24 @@
+/* Variables */
+:root {
+    --primary-color: ;
+    --primary-color-light: ;
+    --primary-color-dark: ;
+    --primary-color-dark-transparent: ;
+    --primary-color-text: ;
+  }
+
+/* Custom Font */
+@font-face {
+    font-family: "Graffiti";
+    src: url("../fonts/AttackGraffiti/AttackGraffiti-3zRBM.ttf");
+  }
+
+/* Global  */
+html {
+    background: url("../img/background.png"), linear-gradient(350deg,#222,#444);
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--primary-color-text);
+    font: 1rem 'Roboto', sans-serif;
+    user-select: none;
+  }
