@@ -4,6 +4,7 @@ This is a timed quiz on JavaScript fundamentals that stores high scores.
 
 ## Screenshots
 
+![Screenshot of The Coding Quiz Page](image.png)
 
 ## Live Demo
 

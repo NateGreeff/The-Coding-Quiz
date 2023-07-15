@@ -99,7 +99,7 @@ const answerButtons = document.getElementsByClassName("answerBtn");
 const feedbackText = document.getElementById("answerFeedback");
 const highScoreText = document.getElementById("highScore");
 
-const gameTime = 50; //Total Game Time
+const gameTime = 60; //Total Game Time
 
 var questionIndex = 0;
 var timeleft = gameTime;
