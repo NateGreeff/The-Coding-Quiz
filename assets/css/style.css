@@ -114,6 +114,15 @@ main {
     flex-direction: column;
 }
 
+#answerFeedback {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 2vmax;
+}
+
 /* Countdown */
 #countDown {
     width: auto;
